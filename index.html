@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcello Barile | Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">MB</div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Marcello Barile</span></h1>
+                <p class="subtitle">Software Engineer | Nature Lover | Astrophotographer</p>
+                <p>Passionate about Nature, Computer Vision and Robotics. Currently building the future of automation <a href="https://camunda.com" target="_blank" class="highlight">@Camunda</a>.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn primary">View My Projects</a>
+                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-pic">
+                    <img src="assets/img/profile.png" alt="Marcello Barile" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>In short, a computer enthusiast with 10+ years of well-rounded experience in full-stack development focused on JavaScript, TypeScript, Node.js, and GraphQL who loves nature, rock climbing, science, philosophy, and astrophotography.</p>
+                        <p>I recommend looking at my <a href="https://www.linkedin.com/in/marcellobarile" target="_blank" class="highlight">LinkedIn</a> to see my profile in detail, my <a href="https://medium.com/@marcello_barile" target="_blank" class="highlight">Medium</a> profile in case you are curious about the things I write, or <a href="https://astrofoto.barile.eu" target="_blank" class="highlight">Sguardo a Nord</a> if you want to see my astrophotography work :-)</p>
+                </div>
+                <div class="skills">
+                    <h3>Things I've touched</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>Node.js</span>
+                        <span>React</span>
+                        <span>GraphQL</span>
+                        <span>PHP</span>
+                        <span>Redux</span>
+                        <span>Redis</span>
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>Git</span>
+                        <span>LLMs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Sguardo a Nord</h3>
+                        <p>An astrophotography blog documenting deep-sky imaging and space exploration from Southern Italy.</p>
+                        <div class="project-links">
+                            <a href="https://astrofoto.barile.eu" target="_blank"><i class="fas fa-external-link-alt"></i> Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>nutrifacts.js</h3>
+                        <p>A TypeScript library to calculate nutrition facts smartly — no third-party services or remote databases involved.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marcellobarile/nutrifacts.js" target="_blank"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>squitty</h3>
+                        <p>A lightweight background app that produces real-time mechanical sounds for mouse events (click, scroll, movement) to provide haptic-like auditory feedback.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marcellobarile/squitty" target="_blank"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>AtlasGQL</h3>
+                        <p>A self-composing GraphQL server library built with TypeScript, Express, and Apollo Server.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marcellobarile/AtlasGQL" target="_blank"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>multilang-sentiment</h3>
+                        <p>Multi-language AFINN-based sentiment analysis for Node.js.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marcellobarile/multilang-sentiment" target="_blank"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>ngx-simple-state</h3>
+                        <p>A lightweight app state management library for Angular.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marcellobarile/ngx-simple-state" target="_blank"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>GoPiGo3</h3>
+                        <p>A Raspberry Pi robot platform — fork with contributions to the GoPiGo3 project.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marcellobarile/GoPiGo3" target="_blank"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>GrovePi</h3>
+                        <p>An open-source platform for connecting Grove Sensors to the Raspberry Pi — fork with contributions.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marcellobarile/GrovePi" target="_blank"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>DI_Sensors</h3>
+                        <p>Dexter Industries sensor drivers for Raspberry Pi — fork with contributions.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marcellobarile/DI_Sensors" target="_blank"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>PivotPi</h3>
+                        <p>A servo controller for the Raspberry Pi — fork with contributions.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/marcellobarile/PivotPi" target="_blank"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Got an interesting idea or project? Let's chat about it.</p>
+            <div class="social-links">
+                <a href="https://github.com/marcellobarile" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/marcellobarile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:marcello@barile.eu"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Marcello Barile. Built with an LLM as my pair programmer.</p>
+        </div>
+    </footer>
+
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/particle-network.js"></script>
+</body>
+</html>
