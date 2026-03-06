@@ -1,7 +1,7 @@
 // Sci-fi particle network background
 (function () {
     const CONFIG = {
-        particleCount: 500,
+        particleDensity: 0.26,
         connectionDist: 200,
         mouseDist: 300,
         sparkDist: 250,
@@ -156,12 +156,22 @@
         var hero = document.getElementById('hero');
         w = canvas.width = hero.offsetWidth;
         h = canvas.height = hero.offsetHeight;
+
+        if (particles) {
+            const targetCount = Math.floor(w * CONFIG.particleDensity);
+            while (particles.length < targetCount) particles.push(new Particle());
+            if (particles.length > targetCount) particles.length = targetCount;
+
+            particles.forEach(p => {
+                if (p.x > w) p.x = Math.random() * w;
+                if (p.y > h) p.y = Math.random() * h;
+            });
+        }
     }
 
     function init() {
-        resize();
         particles = [];
-        for (var i = 0; i < CONFIG.particleCount; i++) particles.push(new Particle());
+        resize();
     }
 
     function draw() {

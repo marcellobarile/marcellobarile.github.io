@@ -184,8 +184,14 @@ nav ul li a:hover {
     max-width: 500px;
 }
 
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .hero-cta .btn {
-    margin-right: 1rem;
+    margin: 0;
 }
 
 .hero-image {
@@ -356,6 +362,13 @@ footer p {
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-cta {
+        justify-content: center;
     }
 
     .hero-text h1 {
