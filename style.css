@@ -139,10 +139,10 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding: 100px 0 60px;
     background: linear-gradient(135deg, #112240 0%, var(--bg-color) 100%);
     position: relative;
     overflow: hidden;
@@ -359,6 +359,10 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    #hero {
+        padding: 120px 0 80px;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;

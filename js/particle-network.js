@@ -3,7 +3,7 @@
     const CONFIG = {
         particleDensity: 0.26,
         connectionDist: 200,
-        mouseDist: 300,
+        mouseDist: 100,
         sparkDist: 250,
         attractorForce: 0.015,
         timeStep: 0.015
